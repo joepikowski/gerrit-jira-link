@@ -78,6 +78,7 @@
 
 .gerrit-jira-change-link {
     padding-right: 5px;
+    font-weight: 400;
 }
 
 .gerrit-jira-change-repo {

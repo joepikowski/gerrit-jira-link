@@ -2,7 +2,7 @@
   "name": "Gerrit JIRA Link",
   "version": "1.0",
   "author": "Joe Pikowski",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "short_name": "Gerrit JIRA Link",
   "description": "",
   "icons": {
@@ -10,7 +10,7 @@
     "48": "media/icon48.png",
     "128": "media/icon128.png"
   },
-  "action": {},
+  "browser_action": {},
   "content_scripts": [
     {
       "matches": ["*://*.atlassian.net/*"],
@@ -20,21 +20,17 @@
   ],
   "permissions": [
     "storage",
-    "activeTab"
-  ],
-  "host_permissions": [
+    "activeTab",
+    "http://*/*",
     "https://*/*"
   ],
-  "web_accessible_resources": [{
-    "resources": [
+  "web_accessible_resources": [
       "css/*",
       "lib/*",
       "media/*"
-    ],
-    "matches": ["*://*.atlassian.net/*"]
-  }],
-
+  ],
   "background": {
-    "service_worker": "lib/background.js"
+    "scripts": ["lib/background.js"],
+    "persistent": false
   }
 }
