@@ -132,6 +132,27 @@
 }
 
 
+/* Gerrit Request Status */
+
+.gerrit-jira-recent-status {
+    margin: 2px 0px 0px 5px;
+}
+
+.gerrit-jira-debug-icon-img {
+    height: 12px;
+    margin-right: 2px;
+}
+
+.gerrit-jira-status-icon-img {
+    height: 10px;
+    margin-right: 2px;
+}
+
+.gerrit-jira-status-hint {
+    margin-left: 10px;
+}
+
+
 /* Buttons */
 
 .gerrit-jira-close-button {
