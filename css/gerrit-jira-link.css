@@ -131,16 +131,18 @@
     padding-right: 3px;
 }
 
+.gerrit-jira-debug-icon-img,
+.gerrit-jira-search-icon-img
+{
+    height: 12px;
+    margin-right: 2px;
+}
+
 
 /* Gerrit Request Status */
 
 .gerrit-jira-recent-status {
     margin: 2px 0px 0px 5px;
-}
-
-.gerrit-jira-debug-icon-img {
-    height: 12px;
-    margin-right: 2px;
 }
 
 .gerrit-jira-status-icon-img {
